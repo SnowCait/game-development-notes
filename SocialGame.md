@@ -8,3 +8,4 @@
   * batch
   * admin
   * infra
+  * document
