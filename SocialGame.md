@@ -7,3 +7,4 @@
   * multi
   * batch
   * admin
+  * infra
