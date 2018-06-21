@@ -10,6 +10,12 @@
   * infra
   * document
 
+## DB構成
+* User (Sharding)
+* Game
+* Log (Partition)
+* Kpi
+
 ## 要設計
 * 例外・エラー
 * ログ
