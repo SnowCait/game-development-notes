@@ -9,6 +9,8 @@
   * admin
   * infra
   * document
+  * ci
+    ** Jenkinsfiles
 
 ## DB構成
 * User (Sharding)
