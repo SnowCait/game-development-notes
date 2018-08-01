@@ -14,7 +14,7 @@
 
 ## DB構成
 * User (Sharding)
-* Game
+* Game\[, Share, Common\]
 * Log (Partition)
 * Kpi
 
