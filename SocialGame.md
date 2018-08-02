@@ -2,6 +2,7 @@
 
 ## ディレクトリ構成
 * root
+  * master
   * api
   * realtime
   * multi
