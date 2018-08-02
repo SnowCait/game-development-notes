@@ -1,4 +1,5 @@
-id,name,min,max,description(forDev)
-money_free,無償詩晶石,0,9999,ゲーム内で使用される無償通貨
-money_paid,有償詩晶石,0,9999,ゲーム内で使用される有償通貨
-gacha_ticket,ガチャチケット,0,999,ガチャが引けるチケット
+id,key,name,min,max,description(forDev)
+1,money_free,無償詩晶石,0,9999,ゲーム内で使用される無償通貨
+2,money_paid,有償詩晶石,0,9999,ゲーム内で使用される有償通貨
+3,gacha_ticket,ガチャチケット,0,999,ガチャが引けるチケット
+4,medal,小さなメダル,0,9999,交換所で使用するメダル
