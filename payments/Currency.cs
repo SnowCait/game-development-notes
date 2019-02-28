@@ -1,5 +1,8 @@
 // 通貨インターフェース
-interface ICurrency {}
+interface ICurrency
+{
+  double Value { get; set; }
+}
 
 // 仮想通貨インターフェース
 interface ICryptocurrency : ICurrency {}
