@@ -1,4 +1,4 @@
-payment_item_bundle_id,price,description
+item_bundle_id,price,description
 1,30,有償石1個
 2,300,有償石11個
 3,300,有償石10個＋無償石1個（有償石10個）
