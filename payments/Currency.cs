@@ -1,7 +1,7 @@
 // 通貨インターフェース
 interface ICurrency
 {
-  public double Value { get; set; }
+  public double Amount { get; set; }
 }
 
 // 仮想通貨インターフェース
@@ -10,7 +10,7 @@ interface ICryptocurrency : ICurrency {}
 // 硬貨インターフェース（紙幣と同列、プログラムには不要な気がする）
 interface ICoin : ICurrency
 {
-  public double Unit { get; } 
+  public double Unit { get; }
 }
 
 // 紙幣インターフェース
