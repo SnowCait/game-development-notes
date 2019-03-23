@@ -191,3 +191,12 @@ id,name.ja-jp,name.en-us,description.ja-jp,description.en-us
   }
 }
 ```
+入れ子にするデータは外部コンフィグで設定できるようにするかファイルの命名規則を決めて元データに持たせる
+```
+[characters.xlsx]
+id,name[id,characters_name_localize.id],description[id,characters_description_localize.id]
+[characters_name_localize.xlsx]
+id,ja-jp,en-us
+[characters_description_localize.xlsx]
+id,ja-jp,en-us
+```
