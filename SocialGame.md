@@ -162,3 +162,18 @@
 * アップデートがあった際に RSS から拾って自動的に通知する仕組みを作る
   * GitHub/Redmine/JIRA に Issue を立てる
   * Slack にチャンネルを作って流す
+
+## マスターデータ
+* プランナーが定義する Excel(SpreadSheet) から CSV/JSON を出力する際に複数のシートを1つに統合あるいは1つのシートを複数のファイルに分割できる仕組みを作る
+```csv
+[characters.xlsx]
+id,name(forDev or ja-jp),description(forDev or ja-jp)
+[characters_name_localize.xlsx]
+id,ja-jp,en-us
+[characters_description_localize.xlsx]
+id,ja-jp,en-us
+```
+```csv
+[characters.csv]
+id,name.ja-jp,name.en-us,description.ja-jp,description.en-us
+```
