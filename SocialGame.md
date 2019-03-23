@@ -165,7 +165,7 @@
 
 ## マスターデータ
 * プランナーが定義する Excel(SpreadSheet) から CSV/JSON を出力する際に複数のシートを1つに統合あるいは1つのシートを複数のファイルに分割できる仕組みを作る
-```csv
+```
 [characters.xlsx]
 id,name(forDev or ja-jp),description(forDev or ja-jp)
 [characters_name_localize.xlsx]
@@ -173,7 +173,21 @@ id,ja-jp,en-us
 [characters_description_localize.xlsx]
 id,ja-jp,en-us
 ```
-```csv
+```
 [characters.csv]
 id,name.ja-jp,name.en-us,description.ja-jp,description.en-us
+```
+```
+[characters.json]
+{
+  "id": 1,
+  "name": {
+    "ja-jp": ""
+    "en-us": ""
+  }
+  "description": {
+    "ja-jp": ""
+    "en-us": ""
+  }
+}
 ```
