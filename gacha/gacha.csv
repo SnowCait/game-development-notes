@@ -1,0 +1,3 @@
+id,title,rate_csv,since,until
+1,通常ガチャ,rate/normal.csv,2019-01-01 00:00:00,2038-01-01 00:00:00
+2,限定ガチャ,rate/limited.csv,2019-01-01 15:00:00,2019-01-07 15:00:00
