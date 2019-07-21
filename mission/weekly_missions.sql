@@ -17,6 +17,7 @@ CREATE TABLE `payer`.`weekly_mission_rewards` (
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`player_id`, `mission_id`, `mission_step`, `created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- ゴミデータが残ってしまうのでメンテか週が変わったタイミングのリクエストで DELETE する運用を検討
 
 # weekly_missions ログ
 CREATE TABLE `log`.`log_weekly_missions` (
