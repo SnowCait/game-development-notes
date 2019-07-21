@@ -26,8 +26,8 @@ CREATE TABLE `player`.`missions` (
 	PRIMARY KEY (`player_id`, `mission_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-# 回数
-INSERT INTO `missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, 1)
+# 回数、個数
+INSERT INTO `missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, ?)
   ON DUPLICATE KEY UPDATE `value` = `value` + VALUES(`value`);
 -- always: 2 rows affected
 
