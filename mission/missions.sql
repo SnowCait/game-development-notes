@@ -8,23 +8,39 @@ CREATE TABLE `player`.`missions` (
 	PRIMARY KEY (`player_id`, `mission_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-# 受け取り済みミッション報酬 兼 ログ
+# 受け取り済みミッション報酬
 CREATE TABLE `payer`.`mission_rewards` (
 	`player_id` INT UNSIGNED NOT NULL,
 	`mission_id` INT UNSIGNED NOT NULL,
 	`mission_step` TINYINT UNSIGNED NOT NULL,
-	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,  # ログ用
 	PRIMARY KEY (`player_id`, `mission_id`, `mission_step`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-# ログ
-CREATE TABLE `player`.`missions` (
+# missions ログ
+CREATE TABLE `log`.`log_missions` (
 	`player_id` INT UNSIGNED NOT NULL,
 	`mission_id` INT UNSIGNED NOT NULL,
 	`value` INT UNSIGNED NOT NULL DEFAULT 0,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (`player_id`, `mission_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+	PRIMARY KEY (`player_id`, `mission_id`, `value`, `created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+PARTITION BY RANGE COLUMNS (`created_at`) (
+	PARTITION p201901 VALUES LESS THAN ('2019-02-01 00:00:00'),
+	PARTITION p201902 VALUES LESS THAN ('2019-03-01 00:00:00')
+);
+
+# mission_rewards ログ（ mission_rewards に created_at を追加しても代用できるが weekly mission を考慮して分けておく）
+CREATE TABLE `log`.`log_mission_rewards` (
+	`player_id` INT UNSIGNED NOT NULL,
+	`mission_id` INT UNSIGNED NOT NULL,
+	`mission_step` TINYINT UNSIGNED NOT NULL,
+	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`player_id`, `mission_id`, `mission_step`, `created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+PARTITION BY RANGE COLUMNS (`created_at`) (
+	PARTITION p201901 VALUES LESS THAN ('2019-02-01 00:00:00'),
+	PARTITION p201902 VALUES LESS THAN ('2019-03-01 00:00:00')
+);
 
 # 回数、個数
 INSERT INTO `missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, ?)
