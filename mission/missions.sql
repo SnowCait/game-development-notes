@@ -1,24 +1,35 @@
 use `player`;  # sharding by player_id
 
 # 無期限ミッション
-CREATE TABLE `missions` (
+CREATE TABLE `player`.`missions` (
 	`player_id` INT UNSIGNED NOT NULL,
 	`mission_id` INT UNSIGNED NOT NULL,
-  `value` INT UNSIGNED NOT NULL DEFAULT 0,
+	`value` INT UNSIGNED NOT NULL DEFAULT 0,
 	PRIMARY KEY (`player_id`, `mission_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-# 受け取り済みミッション報酬
-CREATE TABLE `mission_rewards` (
+# 受け取り済みミッション報酬 兼 ログ
+CREATE TABLE `payer`.`mission_rewards` (
 	`player_id` INT UNSIGNED NOT NULL,
 	`mission_id` INT UNSIGNED NOT NULL,
 	`mission_step` TINYINT UNSIGNED NOT NULL,
+	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,  # ログ用
 	PRIMARY KEY (`player_id`, `mission_id`, `mission_step`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+# ログ
+CREATE TABLE `player`.`missions` (
+	`player_id` INT UNSIGNED NOT NULL,
+	`mission_id` INT UNSIGNED NOT NULL,
+	`value` INT UNSIGNED NOT NULL DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`player_id`, `mission_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 # 回数
 INSERT INTO `missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, 1)
   ON DUPLICATE KEY UPDATE `value` = `value` + VALUES(`value`);
+-- always: 2 rows affected
 
 # 最大値
 INSERT INTO `missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, ?)
@@ -29,6 +40,7 @@ INSERT INTO `missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, ?)
 # 更新されたら（回数のときは常に、最大値のときは affected_rows > 0 のとき）ミッション報酬が受け取れるか判定する
 SELECT `step` FROM `master`.`mission_steps` WHERE `id` = ? AND `value` <= ?;
 SELECT MAX(`mission_step`) FROM `mission_rewards` WHERE `player_id` = ? AND `mission_id` = ?;
+INSERT INTO `log`.`log_missions` (`player_id`, `mission_id`, `value`) VALUES (?, ?, ?);
 
 # 報酬受け取り
 INSERT INTO `mission_rewards` (`player_id`, `mission_id`, `mission_step`) VALUES (?, ?, ?);
