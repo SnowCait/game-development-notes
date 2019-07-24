@@ -14,7 +14,7 @@
     * Jenkinsfiles
 
 ## DB構成
-* User (Sharding)
+* Player (Sharding)
 * Game\[, Share, Common\]
 * Log (Partition)
 * Kpi
