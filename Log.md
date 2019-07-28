@@ -10,4 +10,4 @@
   - DB 接続エラーを保存できない
 - BigQuery
 - Kibana
-- Sently
+- Sentry
