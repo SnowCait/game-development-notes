@@ -17,3 +17,8 @@
 
 ## マイグレーション
 * テーブル定義だけでなくデータもマイグレーションする
+
+## UPDATE
+* 整合性の確認のため更新後 affected rows を確認する
+* 基本的には ``SET `value` = `value` + ?`` を使う
+* 使わない場合は WHERE に元の値を含める ``SET `value` = ? WHERE `value = ?``
