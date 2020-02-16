@@ -27,6 +27,7 @@ class Item
 // UserItem と ItemMaster でクラスを分けて管理する
 class UserItem
 {
+  // PK (Id, Expired)
   public int Id;
   public int Amount;
   public DateTime Expired;
@@ -35,6 +36,8 @@ class UserItem
 
 class ItemMaster
 {
+  // PK (Id)
+  public int Id;
   public string Name;
   public int Min;
   public int Max;
