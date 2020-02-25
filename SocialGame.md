@@ -1,5 +1,9 @@
 # ソーシャルゲーム開発
 
+## 歴史
+
+* [DeNA協賛企画 日本モバイルゲーム産業史 目次&年表](https://news.denfaminicogamer.jp/japan-mobile-game-history)
+
 ## ディレクトリ構成
 * root
   * master
