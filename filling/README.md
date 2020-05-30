@@ -11,7 +11,8 @@
 - アイテム
   - item_type
   - item_id
-  - meta
+  - item_amount
+  - item_meta: 追加情報（装備Lvなど）
 - 受取可能期間
   - since
   - until
