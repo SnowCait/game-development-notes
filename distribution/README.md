@@ -12,7 +12,7 @@
 master.distribution
 - id
 - 対象
-  - filling_type
+  - target: 全体、個別
 - アイテム
   - item_type
   - item_id
