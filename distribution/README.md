@@ -9,7 +9,7 @@
 master.distribution
 - id
 - 対象
-  - target: 全体、個別
+  - target: 全体、OS毎、個別
 - アイテム
   - item_type
   - item_id
