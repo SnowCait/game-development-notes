@@ -1,5 +1,17 @@
 # メンテナンス
 
+## 通常メンテナンス
+ユーザーの操作を止めてメンテナンス。
+
+### Optimize
+MySQL InnoDB では `DELETE` をするとゴミが溜まるので定期的に `OPTIMIZE TABLE` しておく。  
+ただし AWS Aurora では非推奨なのでテーブルを作り直す。
+```sql
+CREATE TABLE `new_table` LIKE `table`;
+RENAME TABLE `table` TO `old_table`, `new_table` TO `table`;
+INSERT INTO `table` SELECT * FROM `old_table`;
+```
+
 ## オンメンテ Tips
 ユーザーの操作を止めずに行うメンテナンス。
 
