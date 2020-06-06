@@ -1,6 +1,6 @@
 use `matching`;
 
-CREATE TABLE `rooms` (
+CREATE TABLE `waiting_rooms` (
   `id` BIGINT UNSIGNED AUTO_INCREMENT NOT NULL,
   `number` SMALLINT(7) UNSIGNED ZEROFILL NOT NULL COMMENT 'プレイヤー入力用',
   `host_player_id` INT UNSIGNED NOT NULL,
@@ -22,3 +22,6 @@ SELECT `number`, `host_player_id` FROM `rooms` WHERE `id` IN (?);
 # ゲストが入室
 SELECT * FROM `rooms` WHERE `id` = ? FOR UPDATE;
 UPDATE `rooms` SET `guest_player_ids` = "[?]"
+
+# 出発
+DELETE FROM `rooms` WHERE `id` = ?;
