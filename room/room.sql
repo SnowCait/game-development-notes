@@ -19,9 +19,9 @@ SELECT `id`, `number`, `host_player_id` FROM `rooms` WHERE `quest_id` = ?; # ラ
 SELECT `id` FROM `rooms`; # アプリケーション側でランダムに決めて WHERE IN で詳細を取得
 SELECT `number`, `host_player_id` FROM `rooms` WHERE `id` IN (?);
 
-# ゲストが入室
+# ゲストが入室、退室
 SELECT * FROM `rooms` WHERE `id` = ? FOR UPDATE;
 UPDATE `rooms` SET `guest_player_ids` = "[?]"
 
-# 出発
+# 出発、解散
 DELETE FROM `rooms` WHERE `id` = ?;
