@@ -1,5 +1,7 @@
 use `player`;  # sharding by player_id
 
+# クライアントに持たせてもいいかもしれない
+
 # 汎用性を持たせる
 CREATE TABLE `parties` (
   `player_id` INT UNSIGNED NOT NULL,
