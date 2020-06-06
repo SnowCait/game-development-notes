@@ -37,3 +37,10 @@ CREATE TABLE `parties` (
   PRIMARY KEY (`player_id`, `number`)
 );
 
+# クエストクリア時のパーティ
+CREATE TABLE `quest_cleared_parties` (
+  `player_id` INT UNSIGNED NOT NULL,
+  `quest_id` INT UNSIGNED NOT NULL,
+  `data` JSON NOT NULL,
+  PRIMARY KEY (`player_id`, `quest_id`)
+);
