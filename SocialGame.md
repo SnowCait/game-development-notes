@@ -230,3 +230,6 @@ id,ja-jp,en-us
 [characters_description_localize.xlsx]
 id,ja-jp,en-us
 ```
+
+## 実装
+- [C#のみを使って、今ソーシャルゲームアプリを作るとしたら - Qiita](https://qiita.com/yoship1639/items/c54f6942d847f8374377)
