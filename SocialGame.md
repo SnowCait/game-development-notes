@@ -5,17 +5,18 @@
 * [DeNA協賛企画 日本モバイルゲーム産業史 目次&年表](https://news.denfaminicogamer.jp/japan-mobile-game-history)
 
 ## ディレクトリ構成
-* root
-  * master
+* document
+* master
+* client
+* server
   * api
   * realtime
   * multi
   * batch
-  * admin
-  * infra
-  * document
-  * ci
-    * Jenkinsfiles
+* portal (admin)
+* infra
+* ci (.github/workflows/)
+  * Jenkinsfile
 
 ## クライアント
 * 解析されることを念頭に置く
