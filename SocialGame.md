@@ -5,6 +5,8 @@
 * [DeNA協賛企画 日本モバイルゲーム産業史 目次&年表](https://news.denfaminicogamer.jp/japan-mobile-game-history)
 
 ## ディレクトリ構成
+モノリポの場合。複数に分ける場合は CI で連携を組む。
+
 * document
   * plan: 企画書
   * specification: 仕様書
