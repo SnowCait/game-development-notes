@@ -6,6 +6,9 @@
 
 ## ディレクトリ構成
 * document
+  * plan: 企画書
+  * specification: 仕様書
+  * swagger: API 仕様
 * master
 * client
 * server
