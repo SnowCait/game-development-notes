@@ -1,6 +1,6 @@
 # クライアント
 
-- [Hello from ソーシャルゲームのクライアントエンジニア入門以前 | ソーシャルゲームのクライアントエンジニア入門以前](https://neon-izm.github.io/before_join_socialgame/)
+- [ソーシャルゲームのクライアントエンジニア入門以前](https://neon-izm.github.io/before_join_socialgame/)
 
 ## チート対策
 * 解析されることを念頭に置く
