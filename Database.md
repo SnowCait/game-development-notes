@@ -48,3 +48,7 @@
 * バックアップ
 * メンテナンス
 * 時刻（同期、変更）
+
+## 一般的な Tips
+- [SnowCait/database-notes](https://github.com/SnowCait/database-notes)
+
