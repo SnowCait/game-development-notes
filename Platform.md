@@ -1,6 +1,7 @@
 # プラットフォーム
 
 ## App Store (Apple)
+- [iOSデバイス一覧表 - Qiita](https://qiita.com/takkyun/items/814aa45beee422a5f0c6)
 
 ## Google Play
 
