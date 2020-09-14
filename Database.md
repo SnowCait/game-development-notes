@@ -48,6 +48,7 @@
 * バックアップ
 * メンテナンス
 * 時刻（同期、変更）
+  * [コード内で「現時刻」を気軽に取得してはいけない | Nekoya press](https://nekoya.github.io/blog/2013/07/09/what-time-is-it/)
 
 ## 一般的な Tips
 - [SnowCait/database-notes](https://github.com/SnowCait/database-notes)
