@@ -1,8 +1,9 @@
 # ソーシャルゲーム開発
 
-## 歴史
+## 参考
 
 * [DeNA協賛企画 日本モバイルゲーム産業史 目次&年表](https://news.denfaminicogamer.jp/japan-mobile-game-history)
+* [サンフランシスコのモバイルゲーム会社に入って驚いたこと -リリースまで- - GAME NEVER SLEEPS](https://gameneversleeps.hateblo.jp/entry/2020/10/11/162622)
 
 ## ディレクトリ構成
 モノリポの場合。複数に分ける場合は CI で連携を組む。
