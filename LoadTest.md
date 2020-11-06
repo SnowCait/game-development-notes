@@ -9,6 +9,7 @@
   - 通信量
 - INDEX が張られていないクエリ `log_queries_not_using_indexes`
 - 画面 (API) 毎のクエリ発行数
+- `EXPLAIN`
 
 ## Code
 
