@@ -20,3 +20,4 @@
 
 ## 参考
 - [[技術ブログvol.21] インフラ視点で、負荷テストについて考えてみる | 技術情報ブログ | マネージドホスティングのディーネット](https://www.denet.ad.jp/technology/2014/12/vol21.html)
+- [負荷試験ガイド - withgod's blog](https://withgod.hatenablog.com/entry/2020/11/09/131930)
