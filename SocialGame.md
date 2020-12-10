@@ -14,10 +14,13 @@
   * swagger: API 仕様
 * master
 * client
+  * ios
+  * android
+  * web
 * server
   * api
   * realtime
-  * multi
+  * multi (battle, game)
   * batch
 * portal (admin)
 * infra
