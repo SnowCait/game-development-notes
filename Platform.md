@@ -11,3 +11,6 @@
 - [Web屋がJavaScriptでゲームを作ってSteamで配信するまでの道のり - Qiita](https://qiita.com/laineus/items/0bb62f58910ccdfa1d34)
 
 ## Web
+
+### PWA
+- [これからはじめる PWA 2021](https://zenn.dev/mi_/articles/498a82a0efa0ff)
