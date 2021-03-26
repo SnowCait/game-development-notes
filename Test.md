@@ -18,6 +18,10 @@
 ### 機能テスト (Feature Test)
 API 単位のテストなど。
 
+### E2E テスト
+- Selenium
+- Cypress
+
 ### リグレッションテスト
 
 ### 負荷テスト
