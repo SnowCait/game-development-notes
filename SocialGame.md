@@ -27,6 +27,13 @@
 * ci (.github/workflows/)
   * Jenkinsfile
 
+## Git リポジトリ
+
+決めておくべき運用ルール
+
+* ワークフロー (Git-flow, GitHub-flow, etc)
+* ブランチの命名規則
+
 ## クライアント
 [Client.md](Client.md)
 
