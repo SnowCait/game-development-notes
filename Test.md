@@ -15,7 +15,7 @@
 ### 単体テスト (Unit Test)
 モデルのメソッド単位のテストなど。
 
-### 機能テスト (Feature Test)
+### 機能テスト (Feature Test)、統合テスト (Integration Test)
 API 単位のテストなど。
 
 ### E2E テスト
