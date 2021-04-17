@@ -3,6 +3,7 @@
 - [テストの種類と技法](https://qiita.com/ktarow/items/8c3d94d6c21a0c86b799)
 - [技術的負債とならないテストコードを書くために考えること - Qiita](https://qiita.com/wasimaru/items/7e778493341999c12bac)
 - [Flaky Testとの戦い - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2020/12/23/100000#fn:1)
+- [これからのテストの話をしよう〜Goにおけるテストノウハウ〜 - Qiita](https://qiita.com/mtskhs/items/c9f69b036f0ab47b617e)
 
 ## 始めに
 - 実施するテストを決める
