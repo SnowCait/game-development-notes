@@ -20,3 +20,5 @@ class User
         return $this->db->select($record)->get();
     }
 }
+
+Select<T>();
