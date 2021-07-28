@@ -21,4 +21,5 @@ class User
     }
 }
 
+// こんな感じの方がいいかも
 Select<T>();
