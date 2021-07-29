@@ -4,7 +4,7 @@ User -> Frontend -> Backend -> Storage <- Batch, Portal
 
 ## Frontend
 
-- Client, App
+- Client App
 
 ## Backend
 
