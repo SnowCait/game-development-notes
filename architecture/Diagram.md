@@ -1,6 +1,6 @@
 # 構成図
 
-User -> Frontend -> Backend -> Storage <- Batch, Portal
+User -> Frontend -> (Internet) -> Backend -> Storage <- Batch, Portal
 
 ## Frontend
 
