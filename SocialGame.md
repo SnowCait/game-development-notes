@@ -269,6 +269,8 @@ id,ja-jp,en-us
 id,ja-jp,en-us
 ```
 
+- [モバイルゲームにおけるマスターデータ運用事例 | エンジニアブログ | GREE Engineering](https://labs.gree.jp/blog/2015/12/15368/)
+
 ## 実装
 - [C#のみを使って、今ソーシャルゲームアプリを作るとしたら - Qiita](https://qiita.com/yoship1639/items/c54f6942d847f8374377)
 - [ゲームサーバーの「割り当て」設計](https://zenn.dev/castaneai/articles/allocating-game-servers)
