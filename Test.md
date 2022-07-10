@@ -4,6 +4,10 @@
 - [技術的負債とならないテストコードを書くために考えること - Qiita](https://qiita.com/wasimaru/items/7e778493341999c12bac)
 - [Flaky Testとの戦い - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2020/12/23/100000#fn:1)
 - [これからのテストの話をしよう〜Goにおけるテストノウハウ〜 - Qiita](https://qiita.com/mtskhs/items/c9f69b036f0ab47b617e)
+- [テスト工程を理解する！テストの種類や役割、技法について解説します！ ｜ 案件評判](https://anken-hyouban.com/blog/2019/11/21/test-all/)
+
+<img src="https://user-images.githubusercontent.com/1297512/178142095-f59cdabb-97eb-4b1b-bea4-577863a4f877.png" alt="https://anken-hyouban.com/blog/2019/11/21/test-all/ より" width="50%">
+
 
 ## 始めに
 - 実施するテストを決める
