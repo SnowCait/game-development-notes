@@ -8,11 +8,13 @@
 ## ディレクトリ構成
 モノリポの場合。複数に分ける場合は CI で連携を組む。
 
+他社 IP 関連のアセットディレクトリは独立させておく。（コードを他プロジェクトへ流用する際は消す）
+
 * document
   * plan: 企画書
   * specification: 仕様書
   * swagger: API 仕様
-* master
+* asset (master)
 * client
   * ios
   * android
